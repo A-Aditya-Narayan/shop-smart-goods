@@ -125,6 +125,78 @@ const ProductGrid = ({ selectedCategory, searchQuery = '' }: ProductGridProps) =
       image: "https://images.unsplash.com/photo-1530549387789-4c1017266635?w=300&h=300&fit=crop",
       soldCount: 750,
       category: "Sports"
+    },
+    {
+      id: 13,
+      name: "Smart Watch 5G SIM Call Function",
+      originalPrice: 8.99,
+      salePrice: 5.99,
+      image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300&h=300&fit=crop",
+      soldCount: 1580,
+      category: "Electronics"
+    },
+    {
+      id: 14,
+      name: "Kids Smart Watch 5G GPS Tracker",
+      originalPrice: 7.50,
+      salePrice: 4.99,
+      image: "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=300&h=300&fit=crop",
+      soldCount: 950,
+      category: "Electronics"
+    },
+    {
+      id: 15,
+      name: "Fitness Smart Watch 5G SIM Support",
+      originalPrice: 9.99,
+      salePrice: 6.99,
+      image: "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=300&h=300&fit=crop",
+      soldCount: 1200,
+      category: "Electronics"
+    },
+    {
+      id: 16,
+      name: "Touch Screen Smart Watch 5G",
+      originalPrice: 8.50,
+      salePrice: 5.49,
+      image: "https://images.unsplash.com/photo-1579952363873-27d3bfad9c0d?w=300&h=300&fit=crop",
+      soldCount: 1350,
+      category: "Electronics"
+    },
+    {
+      id: 17,
+      name: "Bluetooth Smart Watch 5G Camera",
+      originalPrice: 9.25,
+      salePrice: 6.25,
+      image: "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=300&h=300&fit=crop",
+      soldCount: 890,
+      category: "Electronics"
+    },
+    {
+      id: 18,
+      name: "Sport Smart Watch 5G Waterproof",
+      originalPrice: 8.75,
+      salePrice: 5.75,
+      image: "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=300&h=300&fit=crop",
+      soldCount: 1150,
+      category: "Electronics"
+    },
+    {
+      id: 19,
+      name: "Android Smart Watch 5G SIM Slot",
+      originalPrice: 9.50,
+      salePrice: 6.50,
+      image: "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=300&h=300&fit=crop",
+      soldCount: 1050,
+      category: "Electronics"
+    },
+    {
+      id: 20,
+      name: "Digital Smart Watch 5G Heart Rate",
+      originalPrice: 8.25,
+      salePrice: 5.25,
+      image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300&h=300&fit=crop",
+      soldCount: 1250,
+      category: "Electronics"
     }
   ];
 
