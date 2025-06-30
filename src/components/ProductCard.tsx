@@ -1,6 +1,7 @@
-
 import React from 'react';
 import { ShoppingBag } from 'lucide-react';
+import { useCart } from '../contexts/CartContext';
+import { useToast } from '@/hooks/use-toast';
 
 interface Product {
   id: number;
@@ -17,7 +18,17 @@ interface ProductCardProps {
 }
 
 const ProductCard = ({ product }: ProductCardProps) => {
+  const { addToCart } = useCart();
+  const { toast } = useToast();
   const discountPercentage = Math.round(((product.originalPrice - product.salePrice) / product.originalPrice) * 100);
+
+  const handleBuyClick = () => {
+    addToCart(product);
+    toast({
+      title: "Added to cart!",
+      description: `${product.name} has been added to your cart.`,
+    });
+  };
 
   return (
     <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 hover:shadow-md transition-all duration-200">
@@ -52,7 +63,10 @@ const ProductCard = ({ product }: ProductCardProps) => {
               {product.soldCount} Sold
             </div>
             
-            <button className="bg-gray-900 text-white px-4 py-2 rounded-xl flex items-center space-x-2 hover:bg-gray-800 transition-colors duration-200">
+            <button 
+              onClick={handleBuyClick}
+              className="bg-gray-900 text-white px-4 py-2 rounded-xl flex items-center space-x-2 hover:bg-gray-800 transition-colors duration-200"
+            >
               <ShoppingBag className="w-4 h-4" />
               <span className="text-sm font-medium">Buy</span>
             </button>

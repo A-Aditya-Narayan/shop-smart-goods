@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import { CartProvider } from '../contexts/CartContext';
 import Header from '../components/Header';
 import FlashSaleBanner from '../components/FlashSaleBanner';
 import CategoryFilters from '../components/CategoryFilters';
@@ -9,17 +10,19 @@ const Index = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Header />
-      <div className="max-w-md mx-auto bg-white min-h-screen">
-        <FlashSaleBanner />
-        <CategoryFilters 
-          selectedCategory={selectedCategory}
-          onCategoryChange={setSelectedCategory}
-        />
-        <ProductGrid selectedCategory={selectedCategory} />
+    <CartProvider>
+      <div className="min-h-screen bg-gray-50">
+        <Header />
+        <div className="max-w-md mx-auto bg-white min-h-screen">
+          <FlashSaleBanner />
+          <CategoryFilters 
+            selectedCategory={selectedCategory}
+            onCategoryChange={setSelectedCategory}
+          />
+          <ProductGrid selectedCategory={selectedCategory} />
+        </div>
       </div>
-    </div>
+    </CartProvider>
   );
 };
 
