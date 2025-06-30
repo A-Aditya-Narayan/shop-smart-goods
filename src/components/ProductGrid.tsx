@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ProductCard from './ProductCard';
 
@@ -72,6 +71,60 @@ const ProductGrid = ({ selectedCategory, searchQuery = '' }: ProductGridProps) =
       image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=300&h=300&fit=crop",
       soldCount: 670,
       category: "Food"
+    },
+    {
+      id: 7,
+      name: "Professional Soccer Ball",
+      originalPrice: 49.99,
+      salePrice: 29.99,
+      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=300&fit=crop",
+      soldCount: 850,
+      category: "Sports"
+    },
+    {
+      id: 8,
+      name: "Premium Yoga Mat",
+      originalPrice: 79.99,
+      salePrice: 49.99,
+      image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=300&h=300&fit=crop",
+      soldCount: 1200,
+      category: "Sports"
+    },
+    {
+      id: 9,
+      name: "Basketball Shoes",
+      originalPrice: 129.99,
+      salePrice: 89.99,
+      image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300&h=300&fit=crop",
+      soldCount: 650,
+      category: "Sports"
+    },
+    {
+      id: 10,
+      name: "Tennis Racket Set",
+      originalPrice: 159.99,
+      salePrice: 99.99,
+      image: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=300&h=300&fit=crop",
+      soldCount: 420,
+      category: "Sports"
+    },
+    {
+      id: 11,
+      name: "Resistance Bands Kit",
+      originalPrice: 34.99,
+      salePrice: 19.99,
+      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=300&fit=crop",
+      soldCount: 980,
+      category: "Sports"
+    },
+    {
+      id: 12,
+      name: "Swimming Goggles",
+      originalPrice: 24.99,
+      salePrice: 14.99,
+      image: "https://images.unsplash.com/photo-1530549387789-4c1017266635?w=300&h=300&fit=crop",
+      soldCount: 750,
+      category: "Sports"
     }
   ];
 
